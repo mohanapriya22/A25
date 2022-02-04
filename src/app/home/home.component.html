@@ -1,0 +1,42 @@
+<!-- *ngIf -->
+<div class="text-center">
+    <button class="btn btn-danger" (click)=changeStatus()>{{status?"hide":"show"}}</button>
+</div>
+<h1 *ngIf=status>Welcome Nirmaan Students</h1>
+
+<!-- *ngFor -->
+
+<ul *ngFor="let v of numbers;let i=index">
+    <li>the value of index {{i}} is {{v}}</li>
+</ul>
+
+<!-- twoway data binding -->
+<input type="text" name="" id="" [(ngModel)]=n>
+{{n}}
+
+
+<p>home works!</p>
+<!-- interpolation -->
+{{name}}
+{{num}}
+
+<!-- property -->
+<input type="text" name="" id="" [value]=name>
+<h1 [innerHTML]=num></h1>
+<img [src]=imgurl alt="" width="300px" height="200px">
+
+<!-- event -->
+
+    <input type="text" name="" id="" #ref>
+    <!-- #ref is reference variable to read value of input field -->
+    <button (click)="test(ref.value)">click</button>
+<hr>
+    <!-- ex-1 -->
+    <button (click)="incval()">increment</button>
+    <h1>{{counter}}</h1>
+
+    <!-- *ngIf -->
+    <div class="text-center">
+        <button class="btn btn-danger" (click)=changeStatus()>{{status?"hide":"show"}}</button>
+    </div>
+    <h1 *ngIf=status>Welcome Nirmaan Students</h1>

@@ -1,0 +1,43 @@
+
+<img src="./assets/images/girl.jpeg" alt="">
+
+
+
+<p>signin works!</p>
+<h1>login form</h1>
+<div>
+    Date:{{today}}
+
+    <div>
+        date with pipes:{{today | date}}
+    </div>
+
+    <div>
+        {{today | date:'short'}}
+    </div>
+
+    <div>
+        {{name | uppercase}}
+    </div>
+    <div>
+        {{name | lowercase}}
+    </div>
+    <div>
+        {{name | titlecase}}
+    </div>
+    <div>
+        {{salary}}
+        <br>
+        {{salary | currency}}
+        <br>
+        {{salary | currency:'INR'}}
+    </div>
+
+</div>
+
+<br>
+{{roi | percent}}
+
+<br>
+{{v}}
+{{v | square}}
